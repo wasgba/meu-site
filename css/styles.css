@@ -1,0 +1,85 @@
+body, html {
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    font-size: 18px; /* Tamanho de fonte maior para melhor legibilidade */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto para melhor contraste */
+    background-color: rgba(20, 19, 19, 0.356); /* Fundo semitransparente*/
+}
+
+.carousel-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ocupa toda a altura da janela */
+    overflow: hidden;
+    z-index: -1; /* Coloca o slide atrás do conteúdo */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slides img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Coloca o conteúdo sobre o slide */
+    padding: 40px; /* Aumenta o espaçamento interno */
+    color: white;
+    background-color: rgba(24, 22, 22, 0.623); /* Fundo semitransparente mais escuro para melhor legibilidade */
+    height: 100vh; /* Ocupa toda a altura da janela */
+    overflow-y: auto; /* Permite rolagem se o conteúdo for maior que a tela */
+    box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho */
+    text-align: center; /* Centraliza o texto */
+}
+
+h1, h2 p {
+    margin: 10px 0; /* Espaçamento abaixo dos títulos */
+    padding: 10px;
+    /* background-color: rgba(19, 17, 17, 0.336); /* Fundo semitransparente*/
+    border-radius: 0;
+}
+
+h1 {
+    font-size: 2.5em; /* Tamanho maior para o título principal */
+}
+
+h2 {
+    font-size: 2em; /* Tamanho dos subtítulos */
+}
+
+p {
+    margin: 10px 0;
+    padding: 10px;
+   /* background-color: rgba(8, 8, 8, 0.336); /* Fundo semitransparente para parágrafos */
+    border-radius: 5px;
+    text-align: justify; /* Justifica o texto para alinhamento uniforme */
+}
+
+a {
+    color: #1e90ff; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha links ao passar o mouse */
+}
+
+.course {
+    margin-bottom: 20px; /* Espaçamento entre cursos */
+    padding: 15px;
+    /*border-left: 4px solid #5a7086; /* Barra lateral para destaque */
+    /*background-color: rgba(207, 57, 57, 0.5); /* Fundo suave para cursos */
+    border-radius: 5px;
+}
